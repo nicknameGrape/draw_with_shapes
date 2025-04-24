@@ -45,7 +45,7 @@
 			display: none;
 		}
 		#myCanvas {
-			background: lightgray;
+			background: silver;
 		}
 		.box {
 			display: flex;
@@ -531,7 +531,7 @@
 				currentColorElement.style.outline = "";
 				color = ev.target.id;
 				currentColorElement = document.getElementById(color);
-				currentColorElement.style.outline = "lightgray solid 5px";
+				currentColorElement.style.outline = "silver solid 5px";
 				points = [];
 				draw();
 				lightOn();
@@ -555,7 +555,7 @@
 				console.log(ev.target);
 				drawMode = ev.target.id;
 				currentToolElement = document.getElementById(drawMode);
-				currentToolElement.style.outline = "lightgray solid 5px";
+				currentToolElement.style.outline = "silver solid 5px";
 				points = [];
 				draw();
 				lightOn();
@@ -565,8 +565,8 @@
 		var currentColorElement = document.getElementById(color);
 		var currentToolElement = document.getElementById(drawMode);
 		console.log(drawMode, color);
-		currentColorElement.style.outline = "lightgray solid 5px";
-		currentToolElement.style.outline = "lightgray solid 5px";
+		currentColorElement.style.outline = "silver solid 5px";
+		currentToolElement.style.outline = "silver solid 5px";
 		canvas.width = window.innerWidth;
 		canvas.height = window.innerHeight*.8;
 		shapes.width = canvas.width;
